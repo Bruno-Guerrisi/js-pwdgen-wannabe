@@ -1,7 +1,9 @@
 function myFunction() {
-    let name = prompt('Come ti chiami?');
-    let surname = prompt("Qual'è il tuo cognome?");
-    let favorite_color = prompt("Qual'è il tuo colore preferito?");
+    const name = prompt('Come ti chiami?');
+    const surname = prompt("Qual'è il tuo cognome?");
+    const favorite_color = prompt("Qual'è il tuo colore preferito?");
 
-    document.getElementById('password').innerHTML = `${name}${surname}${favorite_color}21`;
+    let random_number = Math.floor(Math.random() * 101);
+    
+    document.getElementById('password').innerHTML = `${name}${surname}${favorite_color}${random_number}`;
   }
